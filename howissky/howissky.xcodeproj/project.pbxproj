@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4F655C25C5EF1500C94AE0 /* WeatherData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F655A25C5EF1500C94AE0 /* WeatherData+CoreDataClass.swift */; };
+		FF4F655D25C5EF1500C94AE0 /* WeatherData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F655B25C5EF1500C94AE0 /* WeatherData+CoreDataProperties.swift */; };
+		FFD69CE725C4541D006FC33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69CE625C4541D006FC33A /* AppDelegate.swift */; };
+		FFD69CE925C4541D006FC33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69CE825C4541D006FC33A /* SceneDelegate.swift */; };
+		FFD69CEB25C4541D006FC33A /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69CEA25C4541D006FC33A /* WeatherDetailViewController.swift */; };
+		FFD69CEE25C4541D006FC33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD69CEC25C4541D006FC33A /* Main.storyboard */; };
+		FFD69CF125C4541D006FC33A /* howissky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFD69CEF25C4541D006FC33A /* howissky.xcdatamodeld */; };
+		FFD69CF325C4541F006FC33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD69CF225C4541F006FC33A /* Assets.xcassets */; };
+		FFD69CF625C4541F006FC33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD69CF425C4541F006FC33A /* LaunchScreen.storyboard */; };
+		FFD69D0125C4541F006FC33A /* howisskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D0025C4541F006FC33A /* howisskyTests.swift */; };
+		FFD69D1125C48663006FC33A /* ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D0E25C48663006FC33A /* ObjectMapper.swift */; };
+		FFD69D1225C48663006FC33A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D0F25C48663006FC33A /* NetworkManager.swift */; };
+		FFD69D1325C48663006FC33A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D1025C48663006FC33A /* Reachability.swift */; };
+		FFD69D2D25C486F7006FC33A /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D1625C486F7006FC33A /* GenericError.swift */; };
+		FFD69D2E25C486F7006FC33A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D1825C486F7006FC33A /* UIImageView+Extension.swift */; };
+		FFD69D2F25C486F7006FC33A /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D1925C486F7006FC33A /* UIview+Extension.swift */; };
+		FFD69D3C25C48864006FC33A /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D3B25C48864006FC33A /* APIEndPoints.swift */; };
+		FFD69D4125C4A408006FC33A /* WeatherRootResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D4025C4A408006FC33A /* WeatherRootResponse.swift */; };
+		FFD69D4425C52711006FC33A /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D4325C52711006FC33A /* WeatherDetailViewModel.swift */; };
+		FFD69D4725C52765006FC33A /* WeatherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D4625C52765006FC33A /* WeatherDataProvider.swift */; };
+		FFD69D4D25C54134006FC33A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD69D4C25C54134006FC33A /* CoreDataManager.swift */; };
+		FFE383F125C720FA003B0E33 /* FavoriteCity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE383EF25C720FA003B0E33 /* FavoriteCity+CoreDataClass.swift */; };
+		FFE383F225C720FA003B0E33 /* FavoriteCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE383F025C720FA003B0E33 /* FavoriteCity+CoreDataProperties.swift */; };
+		FFE3840725C89131003B0E33 /* FavroiteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE3840625C89131003B0E33 /* FavroiteListViewController.swift */; };
+		FFE3840925C891AB003B0E33 /* FavroiteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE3840825C891AB003B0E33 /* FavroiteViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFD69CFD25C4541F006FC33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD69CDB25C4541D006FC33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD69CE225C4541D006FC33A;
+			remoteInfo = howissky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4F655A25C5EF1500C94AE0 /* WeatherData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FF4F655B25C5EF1500C94AE0 /* WeatherData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FFD69CE325C4541D006FC33A /* howissky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howissky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD69CE625C4541D006FC33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFD69CE825C4541D006FC33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFD69CEA25C4541D006FC33A /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		FFD69CED25C4541D006FC33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFD69CF025C4541D006FC33A /* howissky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = howissky.xcdatamodel; sourceTree = "<group>"; };
+		FFD69CF225C4541F006FC33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFD69CF525C4541F006FC33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFD69CF725C4541F006FC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD69CFC25C4541F006FC33A /* howisskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = howisskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD69D0025C4541F006FC33A /* howisskyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howisskyTests.swift; sourceTree = "<group>"; };
+		FFD69D0225C4541F006FC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD69D0E25C48663006FC33A /* ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapper.swift; sourceTree = "<group>"; };
+		FFD69D0F25C48663006FC33A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FFD69D1025C48663006FC33A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FFD69D1625C486F7006FC33A /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		FFD69D1825C486F7006FC33A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		FFD69D1925C486F7006FC33A /* UIview+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
+		FFD69D3B25C48864006FC33A /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		FFD69D4025C4A408006FC33A /* WeatherRootResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRootResponse.swift; sourceTree = "<group>"; };
+		FFD69D4325C52711006FC33A /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
+		FFD69D4625C52765006FC33A /* WeatherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataProvider.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		FFD69D4C25C54134006FC33A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FFE383EF25C720FA003B0E33 /* FavoriteCity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FFE383F025C720FA003B0E33 /* FavoriteCity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FFE3840625C89131003B0E33 /* FavroiteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavroiteListViewController.swift; sourceTree = "<group>"; };
+		FFE3840825C891AB003B0E33 /* FavroiteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavroiteViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD69CE025C4541D006FC33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD69CF925C4541F006FC33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD69CDA25C4541D006FC33A = {
+			isa = PBXGroup;
+			children = (
+				FFD69CE525C4541D006FC33A /* howissky */,
+				FFD69CFF25C4541F006FC33A /* howisskyTests */,
+				FFD69CE425C4541D006FC33A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD69CE425C4541D006FC33A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69CE325C4541D006FC33A /* howissky.app */,
+				FFD69CFC25C4541F006FC33A /* howisskyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD69CE525C4541D006FC33A /* howissky */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D1A25C486F7006FC33A /* Modules */,
+				FFD69D1425C486F7006FC33A /* Utils */,
+				FFD69D0B25C48663006FC33A /* Managers */,
+				FFE3840D25C94C2C003B0E33 /* App init */,
+				FFE3840E25C94C47003B0E33 /* StoryBoard */,
+				FFD69CF225C4541F006FC33A /* Assets.xcassets */,
+				FFD69CF725C4541F006FC33A /* Info.plist */,
+				FFD69CEF25C4541D006FC33A /* howissky.xcdatamodeld */,
+			);
+			path = howissky;
+			sourceTree = "<group>";
+		};
+		FFD69CFF25C4541F006FC33A /* howisskyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D0025C4541F006FC33A /* howisskyTests.swift */,
+				FFD69D0225C4541F006FC33A /* Info.plist */,
+			);
+			path = howisskyTests;
+			sourceTree = "<group>";
+		};
+		FFD69D0B25C48663006FC33A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D3A25C48773006FC33A /* Core Data */,
+				FFD69D0C25C48663006FC33A /* Network */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FFD69D0C25C48663006FC33A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D0D25C48663006FC33A /* DataConvertion */,
+				FFD69D0F25C48663006FC33A /* NetworkManager.swift */,
+				FFD69D1025C48663006FC33A /* Reachability.swift */,
+				FFD69D3B25C48864006FC33A /* APIEndPoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFD69D0D25C48663006FC33A /* DataConvertion */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D0E25C48663006FC33A /* ObjectMapper.swift */,
+			);
+			path = DataConvertion;
+			sourceTree = "<group>";
+		};
+		FFD69D1425C486F7006FC33A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D1525C486F7006FC33A /* Enums */,
+				FFD69D1725C486F7006FC33A /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FFD69D1525C486F7006FC33A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D1625C486F7006FC33A /* GenericError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FFD69D1725C486F7006FC33A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D1825C486F7006FC33A /* UIImageView+Extension.swift */,
+				FFD69D1925C486F7006FC33A /* UIview+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFD69D1A25C486F7006FC33A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FFE3840525C89104003B0E33 /* Favorite List */,
+				FFD69D3D25C4A3D7006FC33A /* Weather Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FFD69D3A25C48773006FC33A /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D4C25C54134006FC33A /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		FFD69D3D25C4A3D7006FC33A /* Weather Details */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D4525C5273C006FC33A /* Data Provider */,
+				FFD69D4225C526F2006FC33A /* Controller */,
+				FFD69D3F25C4A3F3006FC33A /* ViewModel */,
+				FFD69D3E25C4A3EC006FC33A /* Model */,
+			);
+			path = "Weather Details";
+			sourceTree = "<group>";
+		};
+		FFD69D3E25C4A3EC006FC33A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF4F655A25C5EF1500C94AE0 /* WeatherData+CoreDataClass.swift */,
+				FF4F655B25C5EF1500C94AE0 /* WeatherData+CoreDataProperties.swift */,
+				FFD69D4025C4A408006FC33A /* WeatherRootResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFD69D3F25C4A3F3006FC33A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D4325C52711006FC33A /* WeatherDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFD69D4225C526F2006FC33A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69CEA25C4541D006FC33A /* WeatherDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFD69D4525C5273C006FC33A /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69D4625C52765006FC33A /* WeatherDataProvider.swift */,
+			);
+			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		FFE3840525C89104003B0E33 /* Favorite List */ = {
+			isa = PBXGroup;
+			children = (
+				FFE3840A25C94BFF003B0E33 /* Model */,
+				FFE3840C25C94C19003B0E33 /* Controller */,
+				FFE3840B25C94C0E003B0E33 /* View Model */,
+			);
+			path = "Favorite List";
+			sourceTree = "<group>";
+		};
+		FFE3840A25C94BFF003B0E33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFE383EF25C720FA003B0E33 /* FavoriteCity+CoreDataClass.swift */,
+				FFE383F025C720FA003B0E33 /* FavoriteCity+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFE3840B25C94C0E003B0E33 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFE3840825C891AB003B0E33 /* FavroiteViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		FFE3840C25C94C19003B0E33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFE3840625C89131003B0E33 /* FavroiteListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFE3840D25C94C2C003B0E33 /* App init */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69CE625C4541D006FC33A /* AppDelegate.swift */,
+				FFD69CE825C4541D006FC33A /* SceneDelegate.swift */,
+			);
+			path = "App init";
+			sourceTree = "<group>";
+		};
+		FFE3840E25C94C47003B0E33 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FFD69CEC25C4541D006FC33A /* Main.storyboard */,
+				FFD69CF425C4541F006FC33A /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD69CE225C4541D006FC33A /* howissky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD69D0525C4541F006FC33A /* Build configuration list for PBXNativeTarget "howissky" */;
+			buildPhases = (
+				FFD69CDF25C4541D006FC33A /* Sources */,
+				FFD69CE025C4541D006FC33A /* Frameworks */,
+				FFD69CE125C4541D006FC33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = howissky;
+			productName = howissky;
+			productReference = FFD69CE325C4541D006FC33A /* howissky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFD69CFB25C4541F006FC33A /* howisskyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD69D0825C4541F006FC33A /* Build configuration list for PBXNativeTarget "howisskyTests" */;
+			buildPhases = (
+				FFD69CF825C4541F006FC33A /* Sources */,
+				FFD69CF925C4541F006FC33A /* Frameworks */,
+				FFD69CFA25C4541F006FC33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD69CFE25C4541F006FC33A /* PBXTargetDependency */,
+			);
+			name = howisskyTests;
+			productName = howisskyTests;
+			productReference = FFD69CFC25C4541F006FC33A /* howisskyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD69CDB25C4541D006FC33A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Kamal Sharma";
+				TargetAttributes = {
+					FFD69CE225C4541D006FC33A = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					FFD69CFB25C4541F006FC33A = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = FFD69CE225C4541D006FC33A;
+					};
+				};
+			};
+			buildConfigurationList = FFD69CDE25C4541D006FC33A /* Build configuration list for PBXProject "howissky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFD69CDA25C4541D006FC33A;
+			productRefGroup = FFD69CE425C4541D006FC33A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD69CE225C4541D006FC33A /* howissky */,
+				FFD69CFB25C4541F006FC33A /* howisskyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD69CE125C4541D006FC33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD69CF625C4541F006FC33A /* LaunchScreen.storyboard in Resources */,
+				FFD69CF325C4541F006FC33A /* Assets.xcassets in Resources */,
+				FFD69CEE25C4541D006FC33A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD69CFA25C4541F006FC33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD69CDF25C4541D006FC33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE383F125C720FA003B0E33 /* FavoriteCity+CoreDataClass.swift in Sources */,
+				FFD69D1325C48663006FC33A /* Reachability.swift in Sources */,
+				FFE383F225C720FA003B0E33 /* FavoriteCity+CoreDataProperties.swift in Sources */,
+				FFD69D1225C48663006FC33A /* NetworkManager.swift in Sources */,
+				FFD69D3C25C48864006FC33A /* APIEndPoints.swift in Sources */,
+				FFD69CEB25C4541D006FC33A /* WeatherDetailViewController.swift in Sources */,
+				FFD69D4D25C54134006FC33A /* CoreDataManager.swift in Sources */,
+				FFD69D2E25C486F7006FC33A /* UIImageView+Extension.swift in Sources */,
+				FFE3840725C89131003B0E33 /* FavroiteListViewController.swift in Sources */,
+				FFD69CE725C4541D006FC33A /* AppDelegate.swift in Sources */,
+				FFD69D2D25C486F7006FC33A /* GenericError.swift in Sources */,
+				FF4F655C25C5EF1500C94AE0 /* WeatherData+CoreDataClass.swift in Sources */,
+				FFD69CF125C4541D006FC33A /* howissky.xcdatamodeld in Sources */,
+				FF4F655D25C5EF1500C94AE0 /* WeatherData+CoreDataProperties.swift in Sources */,
+				FFD69CE925C4541D006FC33A /* SceneDelegate.swift in Sources */,
+				FFD69D2F25C486F7006FC33A /* UIview+Extension.swift in Sources */,
+				FFD69D1125C48663006FC33A /* ObjectMapper.swift in Sources */,
+				FFE3840925C891AB003B0E33 /* FavroiteViewModel.swift in Sources */,
+				FFD69D4125C4A408006FC33A /* WeatherRootResponse.swift in Sources */,
+				FFD69D4425C52711006FC33A /* WeatherDetailViewModel.swift in Sources */,
+				FFD69D4725C52765006FC33A /* WeatherDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD69CF825C4541F006FC33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD69D0125C4541F006FC33A /* howisskyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFD69CFE25C4541F006FC33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD69CE225C4541D006FC33A /* howissky */;
+			targetProxy = FFD69CFD25C4541F006FC33A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFD69CEC25C4541D006FC33A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD69CED25C4541D006FC33A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFD69CF425C4541F006FC33A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD69CF525C4541F006FC33A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD69D0325C4541F006FC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFD69D0425C4541F006FC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD69D0625C4541F006FC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = howissky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kamal.howissky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFD69D0725C4541F006FC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = howissky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kamal.howissky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFD69D0925C4541F006FC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = howisskyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kamal.howisskyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/howissky.app/howissky";
+			};
+			name = Debug;
+		};
+		FFD69D0A25C4541F006FC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = howisskyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kamal.howisskyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/howissky.app/howissky";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD69CDE25C4541D006FC33A /* Build configuration list for PBXProject "howissky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD69D0325C4541F006FC33A /* Debug */,
+				FFD69D0425C4541F006FC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD69D0525C4541F006FC33A /* Build configuration list for PBXNativeTarget "howissky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD69D0625C4541F006FC33A /* Debug */,
+				FFD69D0725C4541F006FC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD69D0825C4541F006FC33A /* Build configuration list for PBXNativeTarget "howisskyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD69D0925C4541F006FC33A /* Debug */,
+				FFD69D0A25C4541F006FC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFD69CEF25C4541D006FC33A /* howissky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFD69CF025C4541D006FC33A /* howissky.xcdatamodel */,
+			);
+			currentVersion = FFD69CF025C4541D006FC33A /* howissky.xcdatamodel */;
+			path = howissky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFD69CDB25C4541D006FC33A /* Project object */;
+}
