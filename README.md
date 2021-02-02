@@ -9,7 +9,7 @@
 - Constaraint Issue in UI
 - Some validation
 - Error message
-- Reatain of last result directly
+- No Retain of last result directly so screen appears blank at first
 # requirement
 - Xcode 10+
 
