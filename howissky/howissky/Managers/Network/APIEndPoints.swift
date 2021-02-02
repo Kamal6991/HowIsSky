@@ -48,7 +48,7 @@ enum APIEndPoints {
 
 class Configuration {
     static let baseUrl = "http://api.openweathermap.org/data/2.5/"
-    static let ApiKey = "7ef4d67d9ccf192de4b6cc0c92ac5f0c"
+    static let ApiKey = "Token"
     static let imageBaseUrl = "http://openweathermap.org/img/wn/"
 
     static func getImageUrlFor(imageName: String) -> String {
